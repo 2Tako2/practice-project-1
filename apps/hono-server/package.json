@@ -1,17 +1,24 @@
 {
-  "name": "hono-server",
+  "name": "@practice-project-1/hono-server",
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "build": "tsc",
+    "build": "rm -rf dist && tsc",
     "start": "node dist/index.js"
+  },
+  "exports": {
+    "./routes": "./src/routes/index.ts"
   },
   "dependencies": {
     "@hono/node-server": "^1.19.14",
+    "@hono/zod-validator": "^0.8.0",
+    "@practice-project-1/db": "workspace:*",
     "dotenv": "^17.4.2",
     "drizzle-orm": "^0.45.2",
+    "drizzle-zod": "^0.8.3",
     "hono": "^4.12.24",
-    "pg": "^8.21.0"
+    "pg": "^8.21.0",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@types/node": "^20.11.17",

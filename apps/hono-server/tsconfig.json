@@ -5,6 +5,8 @@
     "strict": true,
     "verbatimModuleSyntax": true,
     "skipLibCheck": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
     "types": [
       "node"
     ],
@@ -12,5 +14,6 @@
     "jsxImportSource": "hono/jsx",
     "outDir": "./dist"
   },
+  "include": ["src/routes/index.ts"],
   "exclude": ["node_modules"]
 }
