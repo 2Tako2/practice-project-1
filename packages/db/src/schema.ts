@@ -23,3 +23,8 @@ export const todosTable = pgTable('todos', {
     createdAt: timestamp({withTimezone: true}).defaultNow(),
     updatedAt: timestamp({withTimezone: true}).defaultNow(),
 })
+
+export type User = typeof usersTable.$inferSelect
+export type NewUser = typeof usersTable.$inferInsert
+export type Todo = typeof todosTable.$inferSelect
+export type NewTodo = typeof todosTable.$inferInsert

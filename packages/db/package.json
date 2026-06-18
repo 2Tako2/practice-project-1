@@ -1,8 +1,19 @@
 {
-  "name": "db",
+  "name": "@practice-project-1/db",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/db.ts",
+  "types": "./src/db.ts",
+  "exports": {
+    ".": {
+      "types": "./src/db.ts",
+      "default": "./src/db.ts"
+    },
+    "./schema": {
+      "types": "./src/schema.ts",
+      "default": "./src/schema.ts"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "db:generate:migration": "drizzle-kit generate",
