@@ -1,5 +1,5 @@
 {
-  "name": "dashboard",
+  "name": "@practice-project-1/dashboard",
   "private": true,
   "type": "module",
   "imports": {
@@ -16,6 +16,7 @@
     "check": "prettier --check ."
   },
   "dependencies": {
+    "@practice-project-1/hono-server": "workspace:^",
     "@tailwindcss/vite": "^4.1.18",
     "@tanstack/react-devtools": "latest",
     "@tanstack/react-router": "latest",
@@ -25,6 +26,7 @@
     "@tanstack/router-plugin": "^1.132.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "hono": "^4.12.24",
     "lucide-react": "^0.577.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
